@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SC World - Cyber Security & Ethical Hacking</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>SC World</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#booking">Book Now</a></li>
+        <li><button id="loginBtn">Login</button></li>
+        <li><button id="logoutBtn" style="display:none;">Logout</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Master Cyber Security & Ethical Hacking</h2>
+    <p>Join thousands of learners at SC World</p>
+  </section>
+
+  <section id="about">
+    <h3>About Us</h3>
+    <p>SC World is a cybersecurity learning platform for students aged 18-45. We focus on hands-on hacking, red teaming, penetration testing, and secure coding.</p>
+  </section>
+
+  <section id="tools">
+    <h3>Tools & Services</h3>
+    <ul>
+      <li>🔒 Penetration Testing</li>
+      <li>🛡️ Vulnerability Assessment</li>
+      <li>🧰 Kali Linux & Metasploit Toolkit</li>
+      <li>🌐 Bug Bounty Training</li>
+      <li>📦 Custom CTF Labs</li>
+    </ul>
+  </section>
+
+  <section id="testimonials">
+    <h3>Testimonials</h3>
+    <blockquote>"SC World made cybersecurity feel accessible. I landed my first internship within 3 months!" – Rakesh, 21</blockquote>
+    <blockquote>"The tools and content are top-notch. Highly recommend to anyone serious about hacking ethically." – Aisha, 29</blockquote>
+  </section>
+
+  <section id="booking">
+    <h3>Book a Session</h3>
+    <form id="bookingForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal">&times;</span>
+      <h3>Login</h3>
+      <input type="text" id="username" placeholder="Username" />
+      <input type="password" id="password" placeholder="Password" />
+      <button id="submitLogin">Login</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 SC World. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+// Modal login toggle
+const loginBtn = document.getElementById("loginBtn");
+const logoutBtn = document.getElementById("logoutBtn");
+const loginModal = document.getElementById("loginModal");
+const closeModal = document.getElementById("closeModal");
+const submitLogin = document.getElementById("submitLogin");
+
+loginBtn.onclick = () => {
+  loginModal.style.display = "block";
+};
+
+closeModal.onclick = () => {
+  loginModal.style.display = "none";
+};
+
+window.onclick = (event) => {
+  if (event.target == loginModal) {
+    loginModal.style.display = "none";
+  }
+};
+
+submitLogin.onclick = () => {
+  const username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
+
+  if (username === "admin" && password === "password123") {
+    alert("Login successful!");
+    loginModal.style.display = "none";
+    loginBtn.style.display = "none";
+    logoutBtn.style.display = "inline";
+  } else {
+    alert("Incorrect credentials.");
+  }
+};
+
+logoutBtn.onclick = () => {
+  loginBtn.style.display = "inline";
+  logoutBtn.style.display = "none";
+  alert("Logged out.");
+};
+
+// Booking form handler
+document.getElementById("bookingForm").onsubmit = (e) => {
+  e.preventDefault();
+  alert("Thanks for booking! We'll get back to you soon.");
+  e.target.reset();
+};
